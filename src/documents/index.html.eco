@@ -86,15 +86,77 @@ title: 'Easy Continuous Integration'
 <section class="page-section section-features" id="features">
 	<div class="page-max-width container_4 clearfix">
 		
-		<h2 class="grid_4">FEATURES</h2>
-		<div class="grid_1">
-			<p class="feature-with-icon feature-icon-">With our Drag and Drop editor you can easily make script for automating any project. </p>
-			<p class="feature-with-icon feature-icon-">Well tuned default settings works great in 9 of 10 cases — so you’re able to start building  your project in several minutes without setting up dozens different options.</p>
-			<p class="feature-with-icon feature-icon-">Responsive UI allows you to monitor your project building status  not only from desktop but also from tablets and smartphones.</p>
-		</div>
-		<div class="grid_3">
-			<img src="/images/solidbuild-app1.png" width="820" style="width:820px" alt="">
+		<h2 class="grid_4 clearfix">FEATURES</h2>
+		<div class="media-object clearfix">
+			<div class="primary-content">
+				<div class="browser-frame">
+					<div class="browser-tabs">
+						<img src="/images/browser-tabs.png" alt="">
+					</div>
+					<img src="/images/solidbuild-app1.png" alt="solidbuild screenshot">
+				</div>
+			</div>
+			<div class="secondary-content">
+				<div class="stacked-list">
+					<p class="stacked-item feature-with-icon"><i class="fa fa-arrows"></i> With our Drag and Drop editor you can easily make script for automating any project. </p>
+					<p class="stacked-item feature-with-icon"><i class="fa fa-lightbulb-o "></i> Well tuned default settings works great in 9 of 10 cases — so you’re able to start building  your project in several minutes without setting up dozens different options.</p>
+					<p class="stacked-item feature-with-icon"><i class="fa fa-tachometer"></i> Responsive UI allows you to monitor your project building status  not only from desktop but also from tablets and smartphones.</p>
+				</div>
+			</div>
 		</div>
 
+	</div>
+</section>
+
+<section class="page-section section-blog" id="blog">
+	<div class="page-max-width container_4 clearfix">
+
+		<h2 class="grid_2">BLOG / LATEST NEWS</h2>
+		<div class="grid_2 right-axis">
+			<a href="/atom.xml"><i class="fa fa-rss"></i> Subscribe to RSS</a>
+			<a href="https://twitter.com/SolidBuildNet"><i class="fa fa-twitter"></i> Follow @SolidBuildNet</a>
+		</div>
+		<div class="grid_4 center-axis">
+			<p>
+				<a href="/blog/" class="button">Read All News</a>
+			</p>
+		</div>
+	</div>
+</section>
+
+<section class="page-section section-contacts" id="contacts">
+	<div class="page-max-width clearfix">
+		
+		<h2 class="center-axis">CONTACTS / TEAM</h2>
+		<ul class="team">
+			<li class="member">
+				<span class="member-container">
+					<img src="/images/shchegrikovich.jpeg" alt="" class="userpic">
+					<strong class="username">Sergey Shchegrikovich</strong>
+					<span class="role">Founder, .Net developer</span>
+				</span>
+			</li>
+			<li class="member">
+				<span class="member-container">
+					<img src="/images/alexsheleh.jpeg" alt="" class="userpic">
+					<strong class="username">Alex Sheleg</strong>
+					<span class="role">.Net developer</span>
+				</span>
+			</li>
+			<li class="member">
+				<a href="http://paulradzkov.com" class="member-container">
+					<img src="/images/paulradzkov.jpeg" alt="" class="userpic">
+					<strong class="username">Paul Radzkov</strong>
+					<span class="role">Front-end developer</span>
+				</a>
+			</li>
+		</ul>
+		<div class="prefix_1 suffix_1 clearfix">
+			<p>We are team from Minsk, Belarus and we are passionate about web-development. Our goal is to create easy to use and effective software. Originally SolidBuild was made to fulfill our daily routine tasks and it doing this perfectly. So we decided to share it with other developers. We are sure that SolidBuild will save your time on boring routine and allows you to concentrate on writing code.</p>
+		</div>
+		<ul class="contacts-list clearfix">
+			<li class="list-item"><a href="mailto:contacts@solidbuild.net" class="icon"><i class="fa fa-envelope-o"></i> contacts@solidbuild.net</a></li>
+			<li class="list-item"><a href="https://twitter.com/SolidBuildNet" class="icon"><i class="fa fa-twitter"></i> @SolidBuildNet</a></li>
+		</ul>
 	</div>
 </section>
