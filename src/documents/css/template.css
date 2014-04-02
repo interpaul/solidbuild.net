@@ -1,8 +1,15 @@
 /* Fonts and sizes */
+html {
+	font-size: 10px;
+}
 body {
 	font-family: sans-serif;
-	font-size: 16px;
+	font-size: 10px;
 	line-height: 1.6;
+}
+.page-container {
+	font-size: 16px;
+	font-size: 1.6rem;
 }
 h1,
 h2,
@@ -18,7 +25,7 @@ code {
 }
 
 /* Custom fonts applies and loaded only on large screens */
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 768px) {
 	body {
 		font-family: 'Open Sans', 'Roboto', sans-serif;
 	}
@@ -30,7 +37,7 @@ code {
 	h6,
 	.navlinks,
 	.nav-list a {
-		font-family: 'PT Sans Caption', 'Roboto', sans-serif;
+		font-family: 'Open Sans', 'Roboto', sans-serif;
 	}
 }
 
@@ -70,7 +77,7 @@ nav a {
 	border: 2px solid;
 	border-radius: 3px;
 	padding: .5em 1.5em;
-	font-family: 'PT Sans Caption', 'Roboto', sans-serif;
+	font-weight: 600;
 	text-transform: uppercase;
 	text-decoration: none;
 	-webkit-box-shadow: inset 0 0 0 0 #2b9aff, 0 0px 0px -2px rgba(0, 0, 0, 0.2);
@@ -94,80 +101,134 @@ nav a {
 }
 
 /* Layout */
-body {
-	border-top: 5px solid #000;
-}
 .page-content {
 	padding: 0 2em 4em;
 	padding: 0 2rem 4rem;
 }
-.content-width > * {
-	max-width: 800px;
-	max-width: 50rem;
+.page-max-width {
+	max-width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
 }
-
+/* page cover */
+.page-cover {
+	padding: 4em;
+	padding: 4rem;
+	background: #25202F;
+	color: #FFF;
+}
 .page-header {
-	border-bottom: 5px solid #000;
-	padding: 2em;
+	padding: 4em 0;
+	padding: 4rem 0;
 	text-align: center;
 	color: #FFF;
-	background-color: #000;
-	/* image © Raymo-Photography http://500px.com/Raymo-Photography */
-	background-image: url(http://ppcdn.500px.org/26300861/37055fb1a4118717b54bc08b5d6d7ae1d73344bf/5.jpg);
-	background-position: 50% 50%;
-	-webkit-background-size: cover;
-	        background-size: cover;
-	-webkit-box-shadow: inset 0 0 0 100em rgba(0,0,0,0.3);
-	   -moz-box-shadow: inset 0 0 0 100em rgba(0,0,0,0.3);
-	        box-shadow: inset 0 0 0 100em rgba(0,0,0,0.3);
-	text-shadow: 0 0 10px #000;
+	font-size: 1.8rem;
 }
-.page-header a:link    {color: #57AFFF;}
-.page-header a:visited {color: #E2ABFF;}
-.page-header a:hover   {color: #C1DFFA;}
-.page-header a:active  {color: #C1DFFA;}
+.page-header a:link    {color: #FFF;}
+.page-header a:visited {color: #FFF;}
+.page-header a:hover   {color: #EB970F;}
+.page-header a:active  {color: #EB970F;}
 
-.page-header h1,
-.page-header h2 {
-	margin-top: 0;
-	
+.logo img {
+	width: 111px;
+	border: none;
 }
-.page-header h1 {
-	margin-bottom: 0.2em;
+
+/* very old browsers */
+.no-display-table .page-header .logo,
+.no-display-table .page-header .main-menu,
+.no-display-table .page-header .header-actions {
+	display: inline-block;
+	vertical-align: middle;
 }
-.page-header h2 {
-	margin-bottom: 1em;
+
+/* default layout */
+.page-header {
+	display: table;
+	width: 100%;
 }
+
+.page-header .logo,
+.page-header .main-menu,
+.page-header .header-actions {
+	display: table-cell;
+	vertical-align: middle;
+}
+
 .page-header .logo {
-	max-width: 100px;
-	max-height: 100px;
-	margin-bottom: 1em;
-}
-@media screen and (min-width: 54em) {
-	.dtb {
-		display: table;
-		width: 100%;
-	}
-	.dtbc-logo {
-		width: 120px;
-	}
-	.dtbc-logo,
-	.dtbc-title,
-	.dtbc-options {
-		display: table-cell;
-		padding: 0.5em;
-		vertical-align: top;
-		text-align: left;
-	}
+	text-align: left;
 }
 
-
-.post-tizer {
-	margin: 4em 0 8em;
-	margin: 4rem 0 8em;
+.page-header .main-menu {
+	text-align: center;
 }
+
+.page-header .header-actions {
+	text-align: right;
+}
+
+.headline {
+	padding: 4em 0 8em;
+	padding: 4rem 0 8rem;
+	text-align: center;
+}
+
+.headline .site-slogan {
+	margin: 0;
+	padding: 2rem 0 1rem;
+}
+
+.phrase-1,
+.phrase-2,
+.phrase-3 {
+	display: block;
+	text-transform: uppercase;
+	letter-spacing: -0.06em;
+	line-height: 1.2;
+}
+.phrase-1 { font-weight: 300; font-size: 45px; }
+.phrase-2 { font-weight: 600; font-size: 60px; }
+.phrase-3 { font-weight: 300; font-size: 40px; line-height: 1.4; }
+
+.invite-block {
+	margin: 12rem 0 4rem;
+}
+.invite-block .side-note {
+	margin-top: 4rem;
+	padding: 2rem;
+	line-height: 1.3;
+}
+.invite-block .button-primary {
+	font-size: 3.6rem;
+	line-height: 1.1;
+	color: #FFF;
+}
+
+.wedge-bottom {
+	position: relative;
+	overflow: hidden;
+}
+.wedge-bottom:before,
+.wedge-bottom:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	display: block;
+	width: 0;
+	height: 0;
+	border-width: 0;
+	border-style: solid;
+	border-color: transparent #FFF;
+}
+.wedge-bottom:before {
+	right: 50%;
+	border-width: 80px 0 0 1000px;
+}
+.wedge-bottom:after {
+	left: 50%;
+	border-width: 80px 1000px 0 0;
+}
+/* page cover end */
 
 /* images */
 .content-width > figure {
@@ -261,42 +322,8 @@ pre code {
 .page-footer {
 	margin: 2em 0;
 	margin: 2rem 0;
-	font-size: 0.8em;
-	font-size: 0.8rem;
 	color: #888;
 	text-align: center;
-}
-
-/* meta */
-.article-meta {
-	padding: 6em 2em 0em;
-	padding: 6rem 2rem 0rem;
-}
-.meta a,
-.vertical-nav a {
-	text-decoration: none;
-}
-.meta-data {
-	list-style-type: none;
-	padding: 0;
-	font-size: 0.8em;
-	font-size: 0.8rem;
-}
-.article-meta .meta-data {
-	margin-bottom: 4em;
-}
-.meta-data li {
-	display: inline-block;
-	margin-right: 1.5em;
-}
-.meta-data li:after {
-	content: '/';
-	margin: 0 0 0 1.5em;
-	color: #AAA;
-}
-.meta-data li:last-child:after {
-	content: '';
-	display: none;
 }
 
 @media screen and (min-width: 80em) {
@@ -320,15 +347,6 @@ pre code {
 	margin-right: auto;
 }
 
-/* disqus */
-#disqus_thread {
-	margin: 6em auto;
-	margin: 6rem auto;
-	padding: 2em;
-	padding: 2rem;
-	max-width: 50em;
-	max-width: 50rem;
-}
 
 /* nav links */
 .read-next {
@@ -461,8 +479,8 @@ pre code {
 	position: relative;
 	overflow: hidden;
 	padding: 1em;
-	font-size: 1.4em;
-	font-weight: bold;
+	font-weight: 600;
+	text-transform: uppercase;
 	-webkit-transition: 0.5s;
 	   -moz-transition: 0.5s;
 	    -ms-transition: 0.5s;
