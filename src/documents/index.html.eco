@@ -82,3 +82,19 @@ title: 'Easy Continuous Integration'
 		</div>
 	</div>
 </section>
+
+<section class="page-section section-features" id="features">
+	<div class="page-max-width container_4 clearfix">
+		
+		<h2 class="grid_4">FEATURES</h2>
+		<div class="grid_1">
+			<p class="feature-with-icon feature-icon-">With our Drag and Drop editor you can easily make script for automating any project. </p>
+			<p class="feature-with-icon feature-icon-">Well tuned default settings works great in 9 of 10 cases — so you’re able to start building  your project in several minutes without setting up dozens different options.</p>
+			<p class="feature-with-icon feature-icon-">Responsive UI allows you to monitor your project building status  not only from desktop but also from tablets and smartphones.</p>
+		</div>
+		<div class="grid_3">
+			<img src="/images/solidbuild-app1.png" width="820" style="width:820px" alt="">
+		</div>
+
+	</div>
+</section>
