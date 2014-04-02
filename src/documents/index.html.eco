@@ -26,9 +26,59 @@ title: 'Easy Continuous Integration'
 		</h1>
 		<div class="invite-block">
 			<p>
-				<a href="" class="button button-primary">Get Invite</a>
+				<a href="#invite" class="button button-primary">Get Invite</a>
 			</p>
 			<p class="side-note">SolidBuild is currently in closed beta. <br> Sign up to be one of the first users to get your hands on it</p>
+		</div>
+	</div>
+</section>
+
+<section class="page-section section-about" id="about">
+	<div class="page-max-width container_4 clearfix">
+		
+		<h2 class="grid_4">WHAT IS SOLIDBUILD</h2>
+		<div class="txt-2-cols grid_3">
+			<p>SolidBuild is on demand continious integration (CI) server designed to make developer’s life easier. We provide the easiest solution on the market for building your own CI process.</p>
+			<p>At the moment our main focus are .Net developers and projects. We are build on top of .Net and we know  what you need. SolidBuild is created to build your project and run your tests after each commit, prepare deployment package and ship it to your customers or QA team.</p>
+			<p>With SolidBuild you will know the pulse of your project and be sure in your code base.</p>
+		</div>
+		<div class="grid_1">
+			<p>
+				<img src="/images/dotnet-logo.png" alt="Microsoft .Net logo">
+			</p>
+		</div>
+
+	</div>
+</section>
+
+<section class="page-section section-invite" id="invite">
+	<div class="transp-decor">
+		<div class="transp-decor">
+			<div class="page-max-width center-axis">
+				
+				<div class="roundel">
+					<p class="tizer roundel-inner">
+						If you don’t want <br>
+						to waste your time on <br>
+						Continuous Intergation, <br>
+						but want to focus <br>
+						on development, <br>
+						then SolidBuild <br>
+						is for you.
+					</p>
+				</div>
+				<p class="side-note heavy-text">
+					SolidBuild is currently in closed beta. <br> 
+					Sign up to be one of the first users <br>
+					to get your hands on it
+				</p>
+				
+				<form action="#" class="invite-form">
+					<input type="email" class="invite-email" placeholder="Enter Your Email">
+					<button class="button">Get Invite</button>
+				</form>
+
+			</div>
 		</div>
 	</div>
 </section>

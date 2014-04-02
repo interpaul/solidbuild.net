@@ -47,10 +47,8 @@ docpadConfig = {
 			styles: [
 				'/vendor/normalize.css'
 				'/vendor/h5bp.css'
-				'/css/bettertext.css'
 				'http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,600,700&amp;subset=latin'
-				'/css/github.css'
-				'/css/template.css'
+				'/css/solidbuild.css'
 			]
 
 			# The website's scripts
