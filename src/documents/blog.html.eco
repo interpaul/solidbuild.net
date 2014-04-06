@@ -1,0 +1,12 @@
+---
+layout: default
+title: Blog
+---
+<div class="blogroll">
+    <% for page in @getCollection("articles").toJSON(): %>
+        <section class="post-tizer <%= if page.id is @document.id then 'active' else 'inactive' %>">
+            <h2><a href="<%= page.url %>"><%= page.title %></a></h2>
+			<%- @cuttedContent page.contentRenderedWithoutLayouts %>
+        </section>
+    <% end %>
+</div>

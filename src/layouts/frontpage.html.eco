@@ -35,12 +35,14 @@
 		<%- @content %>
 		<footer class="page-footer content-width">
 			<p class="copyrights">
-				© <%- @site.author %>
+				© 
 				<% if (@document.created_at) : %>
 					<%= @moment(@document.created_at).format('YYYY') %>
 				<% else : %>
-					2013—<%= @moment(@now).format('YYYY') %>
+					2012—<%= @moment(@now).format('YYYY') %>
 				<% end %>
+				<%- @site.author %>
+				— Continuous integration and build server for .Net developers
 			</p>
 		</footer>
 	</div>

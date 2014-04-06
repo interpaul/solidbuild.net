@@ -8,8 +8,9 @@ title: 'Easy Continuous Integration'
 		<a href="#top" class="logo"><img src="/images/logo.png" width="111" height="63" alt="SolidBuild"></a>
 		<nav class="main-menu">
 			<ul class="nav-list">
-				<li><a href="#about"><span>About Service</span></a></li>
+				<li><a href="#about"><span>About</span></a></li>
 				<li><a href="#features"><span>Features</span></a></li>
+				<li><a href="#integrations"><span>Integrations</span></a></li>
 				<li><a href="#blog"><span>Blog</span></a></li>
 				<li><a href="#contacts"><span>Contacts</span></a></li>
 			</ul>
@@ -108,13 +109,83 @@ title: 'Easy Continuous Integration'
 	</div>
 </section>
 
+<section class="page-section section-integrations" id="integrations">
+	<div class="page-max-width container_4 clearfix">
+
+		
+		<div class="grid_4 clearfix">
+			<h2>INTEGRATIONS</h2>
+			<p>Here you can find a list of tools which we integrated with SolidBuild.</p>
+		</div>
+
+		<div class="integration-group grid_2">
+			<h3>Version control systems</h3>
+			<ul>
+				<li>Git</li>
+				<li>Mercurial</li>
+				<li>SVN</li>
+			</ul>
+
+			<h3>Script runners</h3>
+			<ul>
+				<li>Visual Studio solution files</li>
+				<li>MSBuild scripts</li>
+				<li>Powershell scripts</li>
+			</ul>
+
+			<h3>Package management</h3>
+			<ul>
+				<li>NuGet</li>
+			</ul>
+		</div>
+
+		<div class="integration-group grid_2">
+			<h3>Testing frameworks</h3>
+			<ul>
+				<li>MSTest</li>
+				<li>NUnit</li>
+				<li>XUnit</li>
+			</ul>
+
+			<h3>Browsers</h3>
+			<ul>
+				<li>Firefox latest version</li>
+				<li>Chrome latest version</li>
+				<li>IE 10 and later</li>
+			</ul>
+			
+			<h3>Operation systems</h3>
+			<ul>
+				<li>Windows 2003 and later</li>
+				<li>Windows 7 and later</li>
+			</ul>
+		</div>
+
+	</div>
+</section>
+
 <section class="page-section section-blog" id="blog">
 	<div class="page-max-width container_4 clearfix">
 
-		<h2 class="grid_2">BLOG / LATEST NEWS</h2>
-		<div class="grid_2 right-axis">
-			<a href="/atom.xml"><i class="fa fa-rss"></i> Subscribe to RSS</a>
-			<a href="https://twitter.com/SolidBuildNet"><i class="fa fa-twitter"></i> Follow @SolidBuildNet</a>
+		<div class="clearfix">
+			<h2 class="grid_2">BLOG / LATEST NEWS</h2>
+			<div class="grid_2 right-axis blog-actions">
+				<a href="/atom.xml" class="blog-action-rss"><i class="fa fa-rss"></i> Subscribe to RSS</a>
+				<a href="https://twitter.com/SolidBuildNet" class="blog-action-twitter"><i class="fa fa-twitter"></i> Follow @SolidBuildNet</a>
+			</div>
+		</div>
+		<div class="blogroll clearfix">
+			<% for page in @getCollection("articles").toJSON()[0..5]: %>
+				<section class="post-tizer grid_2 <%= if page.id is @document.id then 'active' else 'inactive' %>">
+					<h3 class="post-heading"><a href="<%= page.url %>"><%= page.title %></a></h3>
+					<p><%- page.blogExcerpt %></p>
+					<p><a href="<%= page.url %>" class="button button-small">read more</a></p>
+					<aside class="post-meta">
+						<p><%= page.postAuthor %></p>
+						<p><%=@moment(page.blogDate).format('DD MMMM YYYY') %></p>
+					</aside>
+				</section>
+			<% end %>
 		</div>
 		<div class="grid_4 center-axis">
 			<p>
