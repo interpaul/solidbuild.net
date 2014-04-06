@@ -31,7 +31,7 @@ docpadConfig = {
 			email: "admin@solidbuild.net"
 
 			# Change to your disqus name or comment it out to disable comments
-			disqus_shortname: "docpadsimpleblog"
+			disqus_shortname: "solidbuild"
 
 			# The website description (for SEO)
 			description: """
@@ -109,16 +109,16 @@ docpadConfig = {
 			@getCollection("html").findAllLive({kind:'blogpost'},[{blogDate:-1}]).on "add", (model) ->
 				model.setMetaDefaults({layout:"posts",postAuthor:"Sergey Shchegrikovich"})
 
-		docs: ->
-			# get all posts by «url», sort them by «created_at» and set to all «layout»
-			@getCollection("html").findAllLive({url: $startsWith: '/docs'},[{created_at:-1}]).on "add", (model) ->
-				model.setMetaDefaults({layout:"default"})
-
 	# Plugins configurations
 	plugins:
 		navlinks:
 			collections:
 				articles: -1
+
+		cleanurls:
+			static: true
+			trailingSlashes: true
+
 		tags:
 			extension: '.html.eco'
 			injectDocumentHelper: (document) ->

@@ -1,12 +1,24 @@
 ---
-layout: default
+layout: posts
 title: Blog
 ---
-<div class="blogroll">
-    <% for page in @getCollection("articles").toJSON(): %>
-        <section class="post-tizer <%= if page.id is @document.id then 'active' else 'inactive' %>">
-            <h2><a href="<%= page.url %>"><%= page.title %></a></h2>
-			<%- @cuttedContent page.contentRenderedWithoutLayouts %>
-        </section>
-    <% end %>
+<div class="clearfix">
+	<h2 class="grid_2">BLOG / LATEST NEWS</h2>
+	<div class="grid_2 right-axis blog-actions">
+		<a href="/atom.xml" class="blog-action-rss"><i class="fa fa-rss"></i> Subscribe to RSS</a>
+		<a href="https://twitter.com/SolidBuildNet" class="blog-action-twitter"><i class="fa fa-twitter"></i> Follow @SolidBuildNet</a>
+	</div>
+</div>
+<div class="blogroll clearfix">
+	<% for page in @getCollection("articles").toJSON(): %>
+		<section class="post-tizer <%= if page.id is @document.id then 'active' else 'inactive' %>">
+			<h3 class="post-heading"><a href="<%= page.url %>"><%= page.title %></a></h3>
+			<p><%- page.blogExcerpt %></p>
+			<p><a href="<%= page.url %>" class="button button-small">read more</a></p>
+			<aside class="post-meta">
+				<p><%= page.postAuthor %></p>
+				<p><%=@moment(page.blogDate).format('DD MMMM YYYY') %></p>
+			</aside>
+		</section>
+	<% end %>
 </div>

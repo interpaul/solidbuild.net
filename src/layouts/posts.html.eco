@@ -21,79 +21,105 @@
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 	
-	<% if (@document.custom_css) : %>
-	<link href='<%- @document.url %>/<%- @document.custom_css %>' rel='stylesheet' type='text/css'>
-	<% end %>
 </head>
 <body class="layout-<%- @document.kind %>">
-	<!--[if lt IE 7]>
-	<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-	<![endif]-->
+	<div class="page-container">
+		<section class="page-cover page-cover-blog" id="top">
+			<header class="page-header page-max-width">
+				<a href="/" class="logo"><img src="/images/logo.png" width="111" height="63" alt="SolidBuild"></a>
+				<nav class="main-menu">
+					<ul class="nav-list">
+						<li><a href="/#about"><span>About</span></a></li>
+						<li><a href="/#features"><span>Features</span></a></li>
+						<li><a href="/#integrations"><span>Integrations</span></a></li>
+						<li><a href="/blog"><span>Blog</span></a></li>
+						<li><a href="/#contacts"><span>Contacts</span></a></li>
+					</ul>
+				</nav>
+				<div class="header-actions">
+					<a href="http://ci.solidbuild.net/" class="button">Login</a>
+				</div>
+			</header>
+			<div class="section-invite-small" id="invite">
+				<div class="transp-decor">
+					<div class="transp-decor">
+						<div class="page-max-width clearfix">
+							<div class="grid_2">
+								
+								<p class="side-note heavy-text">
+									SolidBuild is currently in closed beta. <br> 
+									Sign up to be one of the first users <br>
+									to get your hands on it
+								</p>
+							</div>
+							
+							<form action="#" class="grid_2 invite-form">
+								<input type="email" class="invite-email" placeholder="Enter Your Email">
+								<button class="button">Get Invite</button>
+							</form>
 
-	<% if ((!@document.kind) or (@document.kind != 'article')) : %>
-		<header class="page-header content-width">
-			<%- @partial('hero') %>
-		</header>
-	<% end %>
-	<nav class="site-navigation" id="sticker">
-		<% if (@document.kind == 'article') : %>
-			<a href="/" class="nav-icon"></a>
-		<% else : %>
-			<div class="mainmenu content-width">
-				<ul class="nav-list">
-					<li><a href="#about"><span>About Service</span></a></li>
-					<li><a href="#features"><span>Features</span></a></li>
-					<li><a href="#blog"><span>Blog</span></a></li>
-					<li><a href="#contacts"><span>Contacts</span></a></li>
-				</ul>
+						</div>
+					</div>
+				</div>
 			</div>
-		<% end %>
-	</nav>
-	<aside class="article-meta content-width">
-		<div class="article-meta-container">
-			<ul class="meta-data">
-				<% if (@document.created_at) : %>
-				<li class="date"><%= @moment(@document.created_at).lang('ru').format('DD MMMM YYYY') %></li>
-				<% end %>
-				<% if ((@site.disqus_shortname) and (@document.disqusid)) : %>
-				<li class="comments"><a href="<%= @document.path %>#disqus_thread" data-disqus-identifier="<%= @document.disqusid %>" >Комментарии</a></li>
-				<% end %>
-				<% if (@document.tags) : %>
-				<li class="tags-list">
-					<% for tag in @document.tags : %>
-						<a class="label-tag" href="<%= @getTagUrl(tag) %>"><%= tag %></a>
-					<% end %>
-				</li>
-				<% end %>
-		</ul>
-		</div>
-	</aside>
-	<article class="page-content content-width" role="main">
-		<% if (@document.kind == 'article') : %>
-		<h1><%- @document.title %></h1>
-		<% end %>
-		<%- @content %>
-	</article>
-	<footer class="page-footer content-width">
-		<p class="copyrights">
-			© <%- @site.author %>
-			<% if (@document.created_at) : %>
-				<%= @moment(@document.created_at).format('YYYY') %>
-			<% else : %>
-				2012—<%= @moment(@now).format('YYYY') %>
-			<% end %>
-		</p>
-	</footer>
-	<% if ((@site.disqus_shortname) and (@document.kind == 'article')) : %>
-		<article id="disqus_thread"></article>
-	<% end %>
-	<% if (@document.kind == 'article') : %>
-	<nav class="read-next">
-		<h4 class="read-next-title">Read Also:</h4>
-		<%- @getNavLinks() %>
-	</nav>
-	<% end %>
+		</section>
 
+		<% if (@document.kind == 'blogpost') : %>
+		<div class="page-content page-max-width" role="main">
+			<aside class="article-meta page-max-width">
+				<div class="article-meta-container">
+					<ul class="meta-data">
+						<% if (@document.postAuthor) : %>
+						<li class="author"><%= @document.postAuthor %></li>
+						<% end %>
+						<% if (@document.blogDate) : %>
+						<li class="date"><%= @moment(@document.blogDate).format('DD MMMM YYYY') %></li>
+						<% end %>
+						<% if ((@site.disqus_shortname) and (@document.disqusid)) : %>
+						<li class="comments"><a href="<%= @document.path %>#disqus_thread" data-disqus-identifier="<%= @document.disqusid %>" >Комментарии</a></li>
+						<% end %>
+						<% if (@document.tags) : %>
+						<li class="tags-list">
+							<% for tag in @document.tags : %>
+								<a class="label-tag" href="<%= @getTagUrl(tag) %>"><%= tag %></a>
+							<% end %>
+						</li>
+						<% end %>
+				</ul>
+				</div>
+			</aside>
+			<article class="post-body">
+				<h1><%- @document.title %></h1>
+				<%- @content %>
+			</article>
+		</div>
+		<% else : %>
+		<div class="page-content page-max-width" role="main">
+			<%- @content %>
+		</div>
+		<% end %>
+		<% if ((@site.disqus_shortname) and (@document.kind == 'blogpost')) : %>
+			<article id="disqus_thread" class="page-max-width"></article>
+		<% end %>
+		<% if (@document.kind == 'blogpost') : %>
+		<nav class="read-next page-max-width center-axis">
+			<h4 class="read-next-title">Read Also:</h4>
+			<%- @getNavLinks() %>
+		</nav>
+		<% end %>
+		<footer class="page-footer page-max-width">
+			<p class="copyrights">
+				© 
+				<% if (@document.blogDate) : %>
+					<%= @moment(@document.blogDate).format('YYYY') %>
+				<% else : %>
+					2012—<%= @moment(@now).format('YYYY') %>
+				<% end %>
+				<%- @site.author %>
+				— Continuous integration and build server for .Net developers
+			</p>
+		</footer>
+	</div>
 	<%- @partial('scripts') %>
 </body>
 </html>

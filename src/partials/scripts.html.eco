@@ -6,7 +6,7 @@
 	<%- @getBlock('scripts').add(@site.scripts).toHTML() %>
 
     <% if (@site.disqus_shortname) : %>
-	    <% if (@document.kind == "article") : %>
+	    <% if (@document.kind == "blogpost") : %>
 			<script type="text/javascript">
 				/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
 				var disqus_shortname = '<%= @site.disqus_shortname %>'; // required: replace example with your forum shortname

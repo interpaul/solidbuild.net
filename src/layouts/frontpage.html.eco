@@ -21,19 +21,12 @@
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 	
-	<% if (@document.custom_css) : %>
-	<link href='<%- @document.url %>/<%- @document.custom_css %>' rel='stylesheet' type='text/css'>
-	<% end %>
 </head>
 <body class="layout-<%- @document.kind %>">
 	<div class="page-container">
-		<!--[if lt IE 7]>
-		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-		<![endif]-->
-				
 
 		<%- @content %>
-		<footer class="page-footer content-width">
+		<footer class="page-footer page-max-width">
 			<p class="copyrights">
 				© 
 				<% if (@document.created_at) : %>
