@@ -7,6 +7,7 @@ title: 'Easy Continuous Integration'
 	<header class="page-header page-max-width">
 		<a href="#top" class="logo"><img src="/images/logo.png" width="111" height="63" alt="SolidBuild"></a>
 		<nav class="main-menu">
+			<button class="button nav-button"><i class="fa fa-bars"></i> Menu</button>
 			<ul class="nav-list">
 				<li><a href="#about"><span>About</span></a></li>
 				<li><a href="#features"><span>Features</span></a></li>
@@ -43,7 +44,7 @@ title: 'Easy Continuous Integration'
 			<p>At the moment our main focus are .Net developers and projects. We are build on top of .Net and we know  what you need. SolidBuild is created to build your project and run your tests after each commit, prepare deployment package and ship it to your customers or QA team.</p>
 			<p>With SolidBuild you will know the pulse of your project and be sure in your code base.</p>
 		</div>
-		<div class="grid_1">
+		<div class="grid_1 decorative">
 			<p>
 				<img src="/images/dotnet-logo.png" alt="Microsoft .Net logo">
 			</p>

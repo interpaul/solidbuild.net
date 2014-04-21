@@ -18,10 +18,21 @@
 	float: left;
 	position: relative;
 	padding-left: 40px;
+	padding-left: 4rem;
 	padding-right: 40px;
+	padding-right: 4rem;
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
+}
+@media screen and (max-width: 800px) {
+	.grid_1,
+	.grid_2,
+	.grid_3,
+	.grid_4 {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
 }
 
 /* Grid >> Children (Alpha ~ First, Omega ~ Last)
@@ -80,7 +91,16 @@
 .pull_3 { left:-75.0%; }
 
 
-
+@media screen and (max-width: 480px) {
+	.grid_1,
+	.grid_2,
+	.grid_3,
+	.grid_4 {
+		display: block;
+		float: none;
+		width: auto;
+	}
+}
 
 /* Clear Floated Elements
 ----------------------------------------------------------------------------------------------------*/
