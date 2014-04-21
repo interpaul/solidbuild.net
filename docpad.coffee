@@ -25,6 +25,9 @@ docpadConfig = {
 			# The default title of our website
 			title: "SolidBuild"
 
+			# The title of RSS
+			rssTitle: "SolidBuild"
+
 			# Author name used in copyrights and meta data
 			author: "SolidBuild.net"
 

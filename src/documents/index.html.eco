@@ -170,7 +170,7 @@ title: 'Easy Continuous Integration'
 		<div class="clearfix">
 			<h2 class="grid_2">BLOG / LATEST NEWS</h2>
 			<div class="grid_2 right-axis blog-actions">
-				<a href="/atom.xml" class="blog-action-rss"><i class="fa fa-rss"></i> Subscribe to RSS</a>
+				<a href="/rss.xml" class="blog-action-rss"><i class="fa fa-rss"></i> Subscribe to RSS</a>
 				<a href="https://twitter.com/SolidBuildNet" class="blog-action-twitter"><i class="fa fa-twitter"></i> Follow @SolidBuildNet</a>
 			</div>
 		</div>
