@@ -57,9 +57,7 @@ docpadConfig = {
 
 			# The website's scripts
 			scripts: [
-				'/vendor/log.js'
-				'/vendor/jquery.sticky.js'
-				'/js/script.js'
+				'/vendor/jquery-min.js'
 			]
 
 
