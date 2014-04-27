@@ -106,7 +106,15 @@ title: 'Easy Continuous Integration'
 				</div>
 			</div>
 		</div>
-
+		<div class="clearfix">
+			<div class="">
+				<p class="grid_1 feature-with-icon"><i class="fa fa-arrows"></i> No need to remember build dependencies and install them manually. Build agent is able to download and install 3rd party components such as source control clients, test runners and etc.</p>
+				<p class="grid_1 feature-with-icon"><i class="fa fa-arrows"></i> You can write your own build steps using C#. Check out <a href="http://www.nuget.org/packages/SolidBuild.ManagedStep/">SolidBuild.ManagedStep</a> NuGet package.</p>
+				<p class="grid_1 feature-with-icon"><i class="fa fa-arrows"></i> Over 20 build steps out of the box.</p>
+				<p class="grid_1 feature-with-icon"><i class="fa fa-arrows"></i> Real-time monitoring of build execution.</p>
+			</div>
+		</div>
+		
 	</div>
 </section>
 
