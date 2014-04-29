@@ -573,15 +573,19 @@ pre code {
 	color: #FFF;
 }
 .section-features h2 {
+	margin: 0 4rem 0.5em;
 	color: #FFEFBF;
-	margin-bottom: 4rem;
 }
-@media screen and (max-width: 800px) {
-	.section-features h2.grid_4 {
-		padding-left: 3rem;
-		padding-right: 3rem;
-	}
+.section-features a:link {
+	color: #93DCFF;
 }
+.section-features a:hover {
+	color: #69CEFF;
+}
+.section-features a:visited {
+	color: #E2ADFF;
+}
+
 .section-features .feature-with-icon {
 	font-size: 14px;
 	font-size: 1.4rem;
@@ -590,6 +594,19 @@ pre code {
 	color: #F7CC4F;
 }
 
+.features-grid {
+	padding: 40px 40px 20px;
+	padding: 4rem 4rem 2rem;
+}
+@media screen and (max-width: 800px) {
+	.section-features h2 {
+		margin-left: 3rem;
+		margin-right: 3rem;
+	}
+	.features-grid {
+		padding: 2rem 3rem 2rem;
+	}
+}
 
 .media-object,
 .media-object .primary-content,
@@ -624,32 +641,53 @@ pre code {
 		padding: 0 4rem;
 	}
 	.media-object .secondary-content {
-		margin-right: 75%;
+		/*margin-right: 75%;*/
 		padding: 0 4rem;
+
 	}
 
 }
 
-.stacked-item + .stacked-item {
+.stacked-item {
 	padding-top: 3rem;
 }
 
-@media screen and (min-width: 600px) and (max-width: 959px) {
-	
+@media screen and (min-width: 600px) {
 	.stacked-list {
-		display: table;
-		table-layout: fixed;
-		margin: 0 -4rem;
-
+		margin-left: -2rem;
+		margin-right: -2rem;
 	}
-	.stacked-list .stacked-item {
-		display: table-cell;
-		padding: 0 4rem;
-		width: 1%;
+	.stacked-item {
+		display: inline-block;
+		vertical-align: top;
+		width: 33.3%;
+		margin: 0;
+		padding: 3rem 2rem;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
 	}
 
 }
-
+@media screen and (min-width: 1100px) {
+	.stacked-item:nth-child(2) {
+		padding-top: 0;
+	}
+	.stacked-item:nth-child(5) {
+		clear: both;
+		float: left;
+	}
+	.stacked-item {
+		width: 25%;
+	}
+	.browser-frame {
+		float: right;
+		width: 75%;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+	}
+}
 .team {
 	list-style-type: none;
 	margin: 4rem 0 8rem;

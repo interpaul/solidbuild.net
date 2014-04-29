@@ -58,7 +58,7 @@ title: 'Easy Continuous Integration'
 		<div class="transp-decor">
 			<div class="page-max-width center-axis">
 				
-				<div class="roundel">
+				<div class="roundel decorative">
 					<p class="tizer roundel-inner">
 						If you don’t want <br>
 						to waste your time on <br>
@@ -88,33 +88,26 @@ title: 'Easy Continuous Integration'
 <section class="page-section section-features" id="features">
 	<div class="page-max-width container_4 clearfix">
 		
-		<h2 class="grid_4 clearfix">FEATURES</h2>
-		<div class="media-object clearfix">
-			<div class="primary-content">
+		<h2>FEATURES</h2>
+		<div class=" features-grid">
+			<div class="stacked-list">
 				<div class="browser-frame">
 					<div class="browser-tabs">
 						<img src="/images/browser-tabs.png" alt="">
 					</div>
 					<img src="/images/solidbuild-app1.png" alt="solidbuild screenshot">
 				</div>
+				<!-- not-closed </p> to remove gaps between display:inline-block -->
+				<p class="stacked-item feature-with-icon"><i class="fa fa-arrows"></i> With our Drag and Drop editor you can easily make script for automating any project. 
+				<p class="stacked-item feature-with-icon"><i class="fa fa-lightbulb-o "></i> Well tuned default settings works great in 9 of 10 cases — so you’re able to start building  your project in several minutes without setting up dozens different options.
+				<p class="stacked-item feature-with-icon"><i class="fa fa-rocket"></i> No need to remember build dependencies and install them manually. Build agent is able to download and install 3rd party components such as source control clients, test runners and etc.
+				<p class="stacked-item feature-with-icon"><i class="fa fa-archive"></i> Over 20 build steps out of the box.
+				<p class="stacked-item feature-with-icon"><i class="fa fa-pencil"></i> You can write your own build steps using C#. Check out <a href="http://www.nuget.org/packages/SolidBuild.ManagedStep/">SolidBuild.ManagedStep</a> NuGet package.
+				<p class="stacked-item feature-with-icon"><i class="fa fa-tachometer"></i> Real-time monitoring of build execution.
+				<p class="stacked-item feature-with-icon"><i class="fa fa-coffee"></i> Responsive UI allows you to monitor your project building status not only from desktop but also from tablets and smartphones.
 			</div>
-			<div class="secondary-content">
-				<div class="stacked-list">
-					<p class="stacked-item feature-with-icon"><i class="fa fa-arrows"></i> With our Drag and Drop editor you can easily make script for automating any project. </p>
-					<p class="stacked-item feature-with-icon"><i class="fa fa-lightbulb-o "></i> Well tuned default settings works great in 9 of 10 cases — so you’re able to start building  your project in several minutes without setting up dozens different options.</p>
-					<p class="stacked-item feature-with-icon"><i class="fa fa-tachometer"></i> Responsive UI allows you to monitor your project building status  not only from desktop but also from tablets and smartphones.</p>
-				</div>
-			</div>
-		</div>
-		<div class="clearfix">
-			<div class="">
-				<p class="grid_1 feature-with-icon"><i class="fa fa-arrows"></i> No need to remember build dependencies and install them manually. Build agent is able to download and install 3rd party components such as source control clients, test runners and etc.</p>
-				<p class="grid_1 feature-with-icon"><i class="fa fa-arrows"></i> You can write your own build steps using C#. Check out <a href="http://www.nuget.org/packages/SolidBuild.ManagedStep/">SolidBuild.ManagedStep</a> NuGet package.</p>
-				<p class="grid_1 feature-with-icon"><i class="fa fa-arrows"></i> Over 20 build steps out of the box.</p>
-				<p class="grid_1 feature-with-icon"><i class="fa fa-arrows"></i> Real-time monitoring of build execution.</p>
-			</div>
-		</div>
-		
+
+		</div>		
 	</div>
 </section>
 
