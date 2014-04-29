@@ -209,9 +209,6 @@ blockquote a {
 	.page-header .nav-button {
 		display: inline-block;
 	}
-	.nav-list {
-		display: none;
-	}
 }
 
 
@@ -492,6 +489,96 @@ pre code {
 	position: relative;
 	z-index: 1;
 	vertical-align: middle;
+}
+
+@media screen and (max-width: 800px) {
+
+	/* opened menu */
+	.nav-container {
+		/*display: none;*/
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		padding: 10rem 4rem 4rem;
+		background: rgba(0,0,0,0.9);
+		-webkit-transition: all 0.5s ease;
+		   -moz-transition: all 0.5s ease;
+		    -ms-transition: all 0.5s ease;
+		     -o-transition: all 0.5s ease;
+		        transition: all 0.5s ease;
+		-webkit-transform: translate3D(0,-120%,0);
+		   -moz-transform: translate3D(0,-120%,0);
+		    -ms-transform: translate3D(0,-120%,0);
+		     -o-transform: translate3D(0,-120%,0);
+		        transform: translate3D(0,-120%,0);
+	}
+	.menu-is-opened .nav-container {
+		-webkit-transform: translate3D(0,0,0);
+		   -moz-transform: translate3D(0,0,0);
+		    -ms-transform: translate3D(0,0,0);
+		     -o-transform: translate3D(0,0,0);
+		        transform: translate3D(0,0,0);		
+	}
+	.nav-container:before,
+	.nav-container:after {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 100%;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-color: rgba(0,0,0,0.9) transparent transparent transparent;
+	}
+	.nav-container:before {
+		left: 0;
+		right: 50%;
+		border-width: 4vw 0 0 50vw;
+	}
+	.nav-container:after {
+		left: 50%;
+		right: 0%;
+		border-width: 4vw 50vw 0 0;
+	}
+	.nav-list li {
+		display: block;
+	}
+	.nav-list li:not(:last-child):after {
+		content: none;
+	}
+	.logo,
+	.page-header .button {
+		position: relative;
+		z-index: 2;
+	}
+	.close-nav {
+		margin-bottom: -4rem;
+		border: none;
+		box-shadow: none;
+		color: rgba(255,255,255,0.5);
+	}
+	.close-nav:hover {
+		box-shadow: none;
+		color: #FFF;
+	}
+	.close-nav:focus {
+		outline: none;
+	}
+	.close-nav .ic {
+		display: block;
+		font-size: 4rem;
+		font-weight: 100;
+	}
+	.close-nav .small-txt {
+		font-size: 1rem;
+	}
+
+}
+@media screen and (min-width: 801px) {
+	.close-nav {
+		display: none;
+	}
 }
 @media screen and (min-width: 1050px) {
 	

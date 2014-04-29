@@ -8,13 +8,16 @@ title: 'Easy Continuous Integration'
 		<a href="#top" class="logo"><img src="/images/logo.png" width="111" height="63" alt="SolidBuild"></a>
 		<nav class="main-menu">
 			<button class="button nav-button"><i class="fa fa-bars"></i> Menu</button>
-			<ul class="nav-list">
-				<li><a href="#about"><span>About</span></a></li>
-				<li><a href="#features"><span>Features</span></a></li>
-				<li><a href="#integrations"><span>Integrations</span></a></li>
-				<li><a href="#blog"><span>Blog</span></a></li>
-				<li><a href="#contacts"><span>Contacts</span></a></li>
-			</ul>
+			<div class="nav-container">
+				<ul class="nav-list">
+					<li><a href="#about"><span>About</span></a></li>
+					<li><a href="#features"><span>Features</span></a></li>
+					<li><a href="#integrations"><span>Integrations</span></a></li>
+					<li><a href="#blog"><span>Blog</span></a></li>
+					<li><a href="#contacts"><span>Contacts</span></a></li>
+				</ul>
+				<button class="close-nav"><span class="ic">×</span><span class="small-txt">close menu</span></button>
+			</div>
 		</nav>
 		<div class="header-actions">
 			<a href="http://ci.solidbuild.net/" class="button">Login</a>

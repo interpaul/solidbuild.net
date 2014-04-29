@@ -2,6 +2,14 @@
 
 $(document).ready(function(){
 
+	$('.nav-button').click(function(e){
+		$('body').toggleClass('menu-is-opened');
+	});
+	$('.close-nav').click(function(e){
+		$('body').removeClass('menu-is-opened');
+	});
+
+
 	$('.invite-form #btnGetInvite').click(function(e){
 		e.preventDefault();
 
