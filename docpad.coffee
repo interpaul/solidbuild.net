@@ -46,6 +46,10 @@ docpadConfig = {
 				continuous, integration, server, CI, .net, developers
 				"""
 
+			googleAnalyticsId: "UA-36917965-1"
+
+			googleAnalyticsDomain: "solidbuild.net"
+
 			# The website's styles
 			styles: [
 				'/vendor/normalize.css'
@@ -58,6 +62,7 @@ docpadConfig = {
 			# The website's scripts
 			scripts: [
 				'/vendor/jquery-min.js'
+				'/js/script.js'
 			]
 
 
@@ -130,6 +135,14 @@ docpadConfig = {
 						"""
 				)
 
+	# =================================
+	# Environments
+
+	environments:
+		development:
+			templateData:
+				site:
+					url: 'http://localhost:9778'
 
 	# =================================
 	# DocPad Events

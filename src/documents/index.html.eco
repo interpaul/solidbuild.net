@@ -76,8 +76,8 @@ title: 'Easy Continuous Integration'
 				</p>
 				
 				<form action="#" class="invite-form">
-					<input type="email" class="invite-email" placeholder="Enter Your Email">
-					<button class="button">Get Invite</button>
+					<input type="email" id="txtEmail" class="invite-email" placeholder="Enter Your Email">
+					<button id="btnGetInvite" class="button">Get Invite</button>
 				</form>
 
 			</div>
