@@ -1,6 +1,12 @@
 /* Fonts and sizes */
 html {
 	font-size: 10px;
+	/*min-width: 480px;*/
+}
+@media screen and (max-width: 480px) {
+	html {
+		min-width: 480px;
+	}
 }
 @media screen and (max-width: 800px) {
 	html {
@@ -17,6 +23,7 @@ body {
 	font-size: 10px;
 	line-height: 1.6;
 }
+
 .page-container {
 	font-size: 16px;
 	font-size: 1.6rem;
@@ -580,7 +587,7 @@ pre code {
 		display: none;
 	}
 }
-@media screen and (min-width: 1050px) {
+@media screen and (max-width: 800px), screen and (min-width: 1050px) {
 	
 
 	.nav-list a::before,
@@ -653,6 +660,31 @@ pre code {
 	font-size: 2.4rem;
 }
 
+@media screen and (max-width: 800px) {
+	.section-invite {
+		margin-top: 14rem;
+	}
+	.section-invite .roundel {
+		margin-top: -18rem;
+		width: 26rem;
+		height: 26rem;
+	}
+	.section-invite .side-note,
+	.section-invite .invite-form {
+		font-size: 1.8rem;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.section-invite {
+		margin-top: 0;
+	}
+	.section-invite .side-note,
+	.section-invite .invite-form {
+		font-size: 1.6rem;
+	}
+}
+
 .section-features {
 	padding: 80px 0;
 	padding: 8rem 0;
@@ -685,6 +717,7 @@ pre code {
 	padding: 40px 40px 20px;
 	padding: 4rem 4rem 2rem;
 }
+
 @media screen and (max-width: 800px) {
 	.section-features h2 {
 		margin-left: 3rem;
@@ -825,7 +858,7 @@ pre code {
 }
 .contacts-list > .list-item {
 	display: inline-block;
-	margin: 0 40px;
+	margin: 0 40px 20px;
 	width: 240px;
 	text-align: center;
 }
@@ -862,6 +895,7 @@ pre code {
 .blog-action-twitter .fa { color: #3B9FF3; }
 
 .blog-actions a {
+	display: inline-block;
 	color: #000;
 }
 
