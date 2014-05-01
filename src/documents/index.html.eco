@@ -169,6 +169,8 @@ title: 'Easy Continuous Integration'
 			</ul>
 		</div>
 
+	<span>Didn't find something? Click <a id="btnAddIntegration" href="#integrations">here</a> to add.</span>
+
 	</div>
 </section>
 

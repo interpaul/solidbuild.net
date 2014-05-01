@@ -37,4 +37,10 @@ $(document).ready(function(){
 		return false;
 	});
 
+	$('#btnAddIntegration').click(function(e){
+		e.preventDefault();
+
+		return false;
+	});
+
 });
