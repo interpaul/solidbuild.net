@@ -13,7 +13,7 @@ $(document).ready(function(){
 	$('.invite-form #btnGetInvite').click(function(e){
 		e.preventDefault();
 
-		_gaq.push(['_trackEvent', 'button', 'clicked', 'get invite',, 'true']);
+		ga.push(['_trackEvent', 'button', 'clicked', 'get invite',, 'true']);
 
 		var email = $('.invite-form #txtEmail').val();
 		var atIndex = email.indexOf('@');
