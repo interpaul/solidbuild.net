@@ -80,6 +80,7 @@ title: 'Easy Continuous Integration'
 				</p>
 				
 				<form action="#" class="invite-form">
+				    <div id="pnlSuccess">Thank you! We will let you know when it's ready.</div>
 					<input type="email" id="txtEmail" class="invite-email" placeholder="Enter Your Email">
 					<button id="btnGetInvite" class="button">Get Invite</button>
 				</form>
