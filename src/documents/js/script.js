@@ -10,6 +10,11 @@ $(document).ready(function(){
 	});
 
 
+	$('.nav-list a').click(function(e){
+		var value =  $(e.target).text();
+		ga.push(['_trackEvent', 'link', 'clicked', value,, 'true']);
+	});
+
 	$('.invite-form #btnGetInvite').click(function(e){
 		e.preventDefault();
 

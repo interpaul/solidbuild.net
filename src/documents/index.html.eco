@@ -10,9 +10,9 @@ title: 'Easy Continuous Integration'
 			<button class="button nav-button"><i class="fa fa-bars"></i> Menu</button>
 			<div class="nav-container">
 				<ul class="nav-list">
-					<li><a href="#about"><span>About</span></a></li>
-					<li><a href="#features"><span>Features</span></a></li>
-					<li><a href="#integrations"><span>Integrations</span></a></li>
+					<li><a href="#what-we-do"><span>About</span></a></li>
+					<li><a href="#why-we-so-cool"><span>Features</span></a></li>
+					<li><a href="#just-works"><span>Integrations</span></a></li>
 					<li><a href="#blog"><span>Blog</span></a></li>
 					<li><a href="#contacts"><span>Contacts</span></a></li>
 				</ul>
@@ -38,7 +38,7 @@ title: 'Easy Continuous Integration'
 	</div>
 </section>
 
-<section class="page-section section-about" id="about">
+<section class="page-section section-about" id="what-we-do">
 	<div class="page-max-width container_4 clearfix">
 		
 		<h2 class="grid_4">WHAT IS SOLIDBUILD</h2>
@@ -90,7 +90,7 @@ title: 'Easy Continuous Integration'
 	</div>
 </section>
 
-<section class="page-section section-features" id="features">
+<section class="page-section section-features" id="why-we-so-cool">
 	<div class="page-max-width container_4 clearfix">
 		
 		<h2>FEATURES</h2>
@@ -117,7 +117,7 @@ title: 'Easy Continuous Integration'
 	</div>
 </section>
 
-<section class="page-section section-integrations" id="integrations">
+<section class="page-section section-integrations" id="just-works">
 	<div class="page-max-width container_4 clearfix">
 
 		
