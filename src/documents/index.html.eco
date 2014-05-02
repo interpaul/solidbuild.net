@@ -20,7 +20,7 @@ title: 'Easy Continuous Integration'
 			</div>
 		</nav>
 		<div class="header-actions">
-			<a href="http://ci.solidbuild.net/" class="button">Login</a>
+			<a id="lnkLogin" href="http://ci.solidbuild.net/" class="button">Login</a>
 		</div>
 	</header>
 	<div class="headline page-max-width">
@@ -31,7 +31,7 @@ title: 'Easy Continuous Integration'
 		</h1>
 		<div class="invite-block">
 			<p>
-				<a href="#invite" class="button button-primary">Get Invite</a>
+				<a id="lnkGetInvite" href="#invite" class="button button-primary">Get Invite</a>
 			</p>
 			<p class="side-note">SolidBuild is currently in closed beta. <br> Sign up to be one of the first users to get your hands on it</p>
 		</div>

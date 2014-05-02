@@ -10,8 +10,9 @@ $(document).ready(function(){
 	});
 
 
-	$('.nav-list a').click(function(e){
+	$('.nav-list a, #lnkLogin, #lnkGetInvite').click(function(e){
 		var value =  $(e.target).text();
+		debugger;
 		ga('send',  'event', 'link', 'click', value);
 	});
 
