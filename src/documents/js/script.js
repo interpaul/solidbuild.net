@@ -12,13 +12,13 @@ $(document).ready(function(){
 
 	$('.nav-list a').click(function(e){
 		var value =  $(e.target).text();
-		ga.push(['_trackEvent', 'link', 'clicked', value,, 'true']);
+		ga('send',  'event', 'link', 'click', value);
 	});
 
 	$('.invite-form #btnGetInvite').click(function(e){
 		e.preventDefault();
 
-		ga.push(['_trackEvent', 'button', 'clicked', 'get invite',, 'true']);
+		ga('send',  'event', 'button', 'click', 'get invite');
 
 		var email = $('.invite-form #txtEmail').val();
 		var atIndex = email.indexOf('@');
