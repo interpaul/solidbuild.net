@@ -48,6 +48,8 @@ docpadConfig = {
 
 			googleAnalyticsId: "UA-36917965-1"
 
+			insertYandexMetrika: true
+
 			googleAnalyticsDomain: "solidbuild.net"
 
 			# The website's styles
