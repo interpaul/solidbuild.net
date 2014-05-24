@@ -20,6 +20,9 @@ $(document).ready(function(){
 
 		ga('send',  'event', 'button', 'click', 'get invite');
 
+		$('.invite-form #pnlError').addClass('hide');
+		$('.invite-form #pnlSuccess').addClass('hide');
+
 		var email = $('.invite-form #txtEmail').val();
 		var atIndex = email.indexOf('@');
 		var lastDotIndex = email.lastIndexOf('.');
@@ -35,8 +38,12 @@ $(document).ready(function(){
 			$('.invite-form #btnGetInvite').html('Sending...').attr('disabled', 'disabled');
 
 			request.done(function(e){
+				$('.invite-form #pnlSuccess').removeClass('hide');
 				$('.invite-form #btnGetInvite').html('Get invite').removeAttr('disabled');
 			});
+		}
+		else {
+			$('.invite-form #pnlError').removeClass('hide');
 		}
 
 		return false;

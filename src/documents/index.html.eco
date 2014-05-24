@@ -31,7 +31,7 @@ title: 'Easy Continuous Integration'
 		</h1>
 		<div class="invite-block">
 			<p>
-				<a id="lnkGetInvite" href="#invite" class="button button-primary">Get Invite</a>
+				<a id="lnkGetInvite" href="#be-our-friend" class="button button-primary">Get Invite</a>
 			</p>
 			<p class="side-note">SolidBuild is currently in closed beta. <br> Sign up to be one of the first users to get your hands on it</p>
 		</div>
@@ -57,7 +57,7 @@ title: 'Easy Continuous Integration'
 	</div>
 </section>
 
-<section class="page-section section-invite" id="invite">
+<section class="page-section section-invite" id="be-our-friend">
 	<div class="transp-decor">
 		<div class="transp-decor">
 			<div class="page-max-width center-axis">
@@ -80,7 +80,8 @@ title: 'Easy Continuous Integration'
 				</p>
 				
 				<form action="#" class="invite-form">
-				    <div id="pnlSuccess">Thank you! We will let you know when it's ready.</div>
+				    <div id="pnlSuccess" class="hide">Thank you! We will let you know when it's ready.</div>
+				    <div id="pnlError" class="hide">Please, correct your email and try again.</div>
 					<input type="email" id="txtEmail" class="invite-email" placeholder="Enter Your Email">
 					<button id="btnGetInvite" class="button">Get Invite</button>
 				</form>
