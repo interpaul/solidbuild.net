@@ -115,7 +115,7 @@ docpadConfig = {
 	collections:
 		articles: ->
 			@getCollection("html").findAllLive({kind:'blogpost'},[{blogDate:-1}]).on "add", (model) ->
-				model.setMetaDefaults({layout:"posts",postAuthor:"Sergey Shchegrikovich"})
+				model.setMetaDefaults({layout:"posts",postAuthor:"Solid Build Team"})
 
 	# Plugins configurations
 	plugins:

@@ -13,8 +13,7 @@ title: 'Easy Continuous Integration'
 					<li><a href="#what-we-do"><span>About</span></a></li>
 					<li><a href="#why-we-so-cool"><span>Features</span></a></li>
 					<li><a href="#just-works"><span>Integrations</span></a></li>
-					<li><a href="#blog"><span>Blog</span></a></li>
-					<li><a href="#contacts"><span>Contacts</span></a></li>
+					<li><a href="blog"><span>Blog</span></a></li>
 				</ul>
 				<button class="close-nav"><span class="ic">×</span><span class="small-txt">close menu</span></button>
 			</div>
@@ -172,73 +171,5 @@ title: 'Easy Continuous Integration'
 
 	<span>Didn't find something? Click <a id="btnAddIntegration" href="#integrations">here</a> to add.</span>
 
-	</div>
-</section>
-
-<section class="page-section section-blog" id="blog">
-	<div class="page-max-width container_4 clearfix">
-
-		<div class="clearfix">
-			<h2 class="grid_2">BLOG / LATEST NEWS</h2>
-			<div class="grid_2 right-axis blog-actions">
-				<a href="/rss.xml" class="blog-action-rss"><i class="fa fa-rss"></i> Subscribe to RSS</a>
-				<a href="https://twitter.com/SolidBuildNet" class="blog-action-twitter"><i class="fa fa-twitter"></i> Follow @SolidBuildNet</a>
-			</div>
-		</div>
-		<div class="blogroll clearfix">
-			<% for page in @getCollection("articles").toJSON()[0..5]: %>
-				<section class="post-tizer grid_2 <%= if page.id is @document.id then 'active' else 'inactive' %>">
-					<h3 class="post-heading"><a href="<%= page.url %>"><%= page.title %></a></h3>
-					<p><%- page.blogExcerpt %></p>
-					<p><a href="<%= page.url %>" class="button button-small">read more</a></p>
-					<aside class="post-meta">
-						<p><%= page.postAuthor %></p>
-						<p><%=@moment(page.blogDate).format('DD MMMM YYYY') %></p>
-					</aside>
-				</section>
-			<% end %>
-		</div>
-		<div class="grid_4 center-axis">
-			<p>
-				<a href="/blog/" class="button">Read All News</a>
-			</p>
-		</div>
-	</div>
-</section>
-
-<section class="page-section section-contacts" id="contacts">
-	<div class="page-max-width clearfix">
-		
-		<h2 class="center-axis">CONTACTS / TEAM</h2>
-		<ul class="team">
-			<li class="member">
-				<span class="member-container">
-					<img src="/images/shchegrikovich.jpeg" alt="" class="userpic">
-					<strong class="username">Sergey Shchegrikovich</strong>
-					<span class="role">Founder, .Net developer</span>
-				</span>
-			</li>
-			<li class="member">
-				<span class="member-container">
-					<img src="/images/alexsheleh.jpeg" alt="" class="userpic">
-					<strong class="username">Alex Sheleg</strong>
-					<span class="role">.Net developer</span>
-				</span>
-			</li>
-			<li class="member">
-				<a href="http://paulradzkov.com" class="member-container">
-					<img src="/images/paulradzkov.jpeg" alt="" class="userpic">
-					<strong class="username">Paul Radzkov</strong>
-					<span class="role">Front-end developer</span>
-				</a>
-			</li>
-		</ul>
-		<div class="prefix_1 suffix_1 clearfix">
-			<p>We are team from Minsk, Belarus and we are passionate about web-development. Our goal is to create easy to use and effective software. Originally SolidBuild was made to fulfill our daily routine tasks and it doing this perfectly. So we decided to share it with other developers. We are sure that SolidBuild will save your time on boring routine and allows you to concentrate on writing code.</p>
-		</div>
-		<ul class="contacts-list clearfix">
-			<li class="list-item"><a href="mailto:contacts@solidbuild.net" class="icon"><i class="fa fa-envelope-o"></i> contacts@solidbuild.net</a></li>
-			<li class="list-item"><a href="https://twitter.com/SolidBuildNet" class="icon"><i class="fa fa-twitter"></i> @SolidBuildNet</a></li>
-		</ul>
 	</div>
 </section>
