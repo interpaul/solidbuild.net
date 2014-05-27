@@ -41,12 +41,7 @@
 			<a href="/" class="nav-icon"></a>
 		<% else : %>
 			<div class="mainmenu content-width">
-				<ul class="nav-list">
-					<li><a href="/#what-we-do"><span>About</span></a></li>
-					<li><a href="/#why-we-so-cool"><span>Features</span></a></li>
-					<li><a href="/#just-works"><span>Integrations</span></a></li>
-					<li><a href="/blog"><span>Blog</span></a></li>					
-				</ul>
+				<%- @partial('menu') %>
 			</div>
 		<% end %>
 	</nav>

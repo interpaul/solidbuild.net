@@ -1,0 +1,6 @@
+<form action="#" class="<%- this.formClass %> invite-form">
+	<div id="pnlSuccess" class="hide">Thank you! We will let you know when it's ready.</div>
+	<div id="pnlError" class="hide">Please, correct your email and try again.</div>
+	<input type="email" id="txtEmail" class="invite-email" placeholder="Enter Your Email">
+	<button class="button" id="btnGetInvite">Get Invite</button>
+</form>

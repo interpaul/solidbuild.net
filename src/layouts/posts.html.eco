@@ -29,12 +29,7 @@
 			<header class="page-header page-max-width">
 				<a href="/" class="logo"><img src="/images/logo.png" width="111" height="63" alt="SolidBuild"></a>
 				<nav class="main-menu">
-					<ul class="nav-list">
-						<li><a href="/#what-we-do"><span>About</span></a></li>
-						<li><a href="/#why-we-so-cool"><span>Features</span></a></li>
-						<li><a href="/#just-works"><span>Integrations</span></a></li>
-						<li><a href="/blog"><span>Blog</span></a></li>
-					</ul>
+					<%- @partial('menu') %>
 				</nav>
 				<div class="header-actions">
 					<a href="http://ci.solidbuild.net/" class="button">Login</a>
@@ -53,12 +48,7 @@
 								</p>
 							</div>
 							
-							<form action="#" class="grid_2 invite-form">
-								<div id="pnlSuccess" class="hide">Thank you! We will let you know when it's ready.</div>
-				    			<div id="pnlError" class="hide">Please, correct your email and try again.</div>
-								<input type="email" id="txtEmail" class="invite-email" placeholder="Enter Your Email">
-								<button class="button" id="btnGetInvite">Get Invite</button>
-							</form>
+							<%- @partial('inviteform', { formClass: 'grid_2'}) %>
 
 						</div>
 					</div>

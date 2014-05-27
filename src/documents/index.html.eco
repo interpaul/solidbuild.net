@@ -9,12 +9,7 @@ title: 'Easy Continuous Integration'
 		<nav class="main-menu">
 			<button class="button nav-button"><i class="fa fa-bars"></i> Menu</button>
 			<div class="nav-container">
-				<ul class="nav-list">
-					<li><a href="#what-we-do"><span>About</span></a></li>
-					<li><a href="#why-we-so-cool"><span>Features</span></a></li>
-					<li><a href="#just-works"><span>Integrations</span></a></li>
-					<li><a href="blog"><span>Blog</span></a></li>
-				</ul>
+				<%- @partial('menu') %>
 				<button class="close-nav"><span class="ic">×</span><span class="small-txt">close menu</span></button>
 			</div>
 		</nav>
@@ -78,12 +73,7 @@ title: 'Easy Continuous Integration'
 					to get your hands on it
 				</p>
 				
-				<form action="#" class="invite-form">
-				    <div id="pnlSuccess" class="hide">Thank you! We will let you know when it's ready.</div>
-				    <div id="pnlError" class="hide">Please, correct your email and try again.</div>
-					<input type="email" id="txtEmail" class="invite-email" placeholder="Enter Your Email">
-					<button id="btnGetInvite" class="button">Get Invite</button>
-				</form>
+				<%- @partial('inviteform', { formClass: ''}) %>
 
 			</div>
 		</div>
@@ -169,7 +159,9 @@ title: 'Easy Continuous Integration'
 			</ul>
 		</div>
 
-	<span>Didn't find something? Click <a id="btnAddIntegration" href="#integrations">here</a> to add.</span>
+		<div class="grid_4 clearfix">
+			<p>Our API documentation is <a href="https://api.solidbuild.net/help">here</a>.</p>
+		</div>
 
 	</div>
 </section>
