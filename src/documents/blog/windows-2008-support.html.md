@@ -1,7 +1,7 @@
 ---
 layout: posts
 kind: blogpost
-title: Windows 2008 support
+title: "Windows 2008 support"
 blogExcerpt: "Added support of Windows 2008."
 menuItem: "blog"
 blogDate: 2013-08-06 00:01
