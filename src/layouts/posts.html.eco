@@ -68,7 +68,7 @@
 						<li class="date"><%= @moment(@document.blogDate).format('DD MMMM YYYY') %></li>
 						<% end %>
 						<% if ((@site.disqus_shortname) and (@document.disqusid)) : %>
-						<li class="comments"><a href="<%= @document.path %>#disqus_thread" data-disqus-identifier="<%= @document.disqusid %>" >Комментарии</a></li>
+						<li class="comments"><a href="<%= @document.path %>#disqus_thread" data-disqus-identifier="<%= @document.disqusid %>">Comments</a></li>
 						<% end %>
 						<% if (@document.tags) : %>
 						<li class="tags-list">
