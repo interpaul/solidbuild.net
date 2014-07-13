@@ -135,6 +135,12 @@ title: 'Easy Continuous Integration'
 			<ul>
 				<li>NuGet</li>
 			</ul>
+
+
+			<h3>Clouds</h3>
+			<ul>
+				<li>Azure</li>
+			</ul>
 		</div>
 
 		<div class="integration-group grid_2">

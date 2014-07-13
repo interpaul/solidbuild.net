@@ -3,4 +3,5 @@
 	<div id="pnlError" class="hide">Please, correct your email and try again.</div>
 	<input type="email" id="txtEmail" class="invite-email" placeholder="Enter Your Email">
 	<button class="button" id="btnGetInvite">Get Invite</button>
+	<div>Setup your private CI server in a few clicks.</div>
 </form>
