@@ -47,7 +47,6 @@ title: 'Easy Continuous Integration'
 				<img src="/images/dotnet-logo.png" alt="Microsoft .Net logo">
 			</p>
 		</div>
-
 	</div>
 </section>
 
@@ -168,6 +167,5 @@ title: 'Easy Continuous Integration'
 		<div class="grid_4 clearfix">
 			<p>Our API documentation is <a href="https://api.solidbuild.net/help">here</a>.</p>
 		</div>
-
 	</div>
 </section>
