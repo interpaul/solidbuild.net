@@ -2,7 +2,7 @@
 layout: posts
 kind: blogpost
 title: "Azure integration"
-blogExcerpt: "How to create azgent in Azure?"
+blogExcerpt: "How to create agent in Azure?"
 menuItem: "blog"
 blogDate: 2014-08-12 22:00
 ---
