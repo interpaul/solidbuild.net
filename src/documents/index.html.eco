@@ -40,7 +40,7 @@ title: 'Easy Continuous Integration'
 			<p>SolidBuild is on demand continious integration (CI) server designed to make developer’s life easier. We provide the easiest solution on the market for building your own CI process.</p>
 			<p>At the moment our main focus are .Net developers and projects. We are build on top of .Net and we know  what you need. SolidBuild is created to build your project and run your tests after each commit, prepare deployment package and ship it to your customers or QA team.</p>
 			<p>With SolidBuild you will know the pulse of your project and be sure in your code base.</p>
-			<p><b>4000+ builds</b> were finished with SolidBuild for the last few months.</p>
+			<p><b>5000+ builds</b> were finished with SolidBuild.</p>
 		</div>
 		<div class="grid_1 decorative">
 			<p>
