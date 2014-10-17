@@ -128,13 +128,14 @@ title: 'Easy Continuous Integration'
 				<li>Visual Studio solution files</li>
 				<li>MSBuild scripts</li>
 				<li>Powershell scripts</li>
+				<li>NodeJS</li>
 			</ul>
 
 			<h3>Package management</h3>
 			<ul>
 				<li>NuGet</li>
+				<li>NPM</li>
 			</ul>
-
 
 			<h3>Clouds</h3>
 			<ul>
