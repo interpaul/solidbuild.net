@@ -121,6 +121,7 @@ title: 'Easy Continuous Integration'
 				<li>Git</li>
 				<li>Mercurial</li>
 				<li>SVN</li>
+				<li>TFS</li>
 			</ul>
 
 			<h3>Script runners</h3>
