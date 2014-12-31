@@ -1,7 +1,7 @@
 ---
 layout: posts
 kind: blogpost
-title: Release note - Dec 2014
+title: Release note - Nov 2014
 blogExcerpt: "Release note"
 menuItem: "blog"
 blogDate: 2014-11-30 21:20
