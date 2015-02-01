@@ -33,6 +33,7 @@ $(document).ready(function(){
 									data: JSON.stringify({email:email}),
 									type: "POST",
 									contentType : "application/json;charset=UTF-8",
+									crossDomain : true,
 								});
 
 			$('.invite-form #btnGetInvite').html('Sending...').attr('disabled', 'disabled');
