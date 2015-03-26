@@ -118,43 +118,45 @@ title: 'Easy Continuous Integration'
 		<div class="integration-group grid_2">
 			<h3>Version control systems</h3>
 			<ul>
-				<li>Git</li>
-				<li>Mercurial</li>
-				<li>SVN</li>
-				<li>TFS</li>
+				<li><a href="http://git-scm.com/">Git</a></li>
+				<li><a href="http://mercurial.selenic.com/">Mercurial</a></li>
+				<li><a href="http://subversion.apache.org/">SVN</a></li>
+				<li><a href="http://www.visualstudio.com/products/tfs-overview-vs">TFS</a></li>
 			</ul>
 
 			<h3>Testing frameworks</h3>
 			<ul>
-				<li>MSTest</li>
-				<li>NUnit</li>
-				<li>XUnit</li>
+				<li><a href="https://msdn.microsoft.com/en-us/library/hh694602.aspx">MSTest</a></li>
+				<li><a href="http://www.nunit.org/">NUnit</a></li>
+				<li><a href="http://xunit.github.io/">XUnit</a></li>
+				<li><a href="http://fixie.github.io/">Fixie</a></li>
 			</ul>
 
 			<h3>Package management</h3>
 			<ul>
-				<li>NuGet</li>
-				<li>NPM</li>
+				<li><a href="https://www.nuget.org/">NuGet</a></li>
+				<li><a href="https://www.npmjs.com/">NPM</a></li>
 			</ul>
 
 			<h3>Clouds</h3>
 			<ul>
-				<li>Azure</li>
+				<li><a href="http://azure.microsoft.com/ru-ru/">Azure</a></li>
 			</ul>
 		</div>
 
 		<div class="integration-group grid_2">
 			<h3>Script runners</h3>
 			<ul>
-				<li>Visual Studio solution files</li>
-				<li>MSBuild scripts</li>
-				<li>Powershell scripts</li>
-				<li>NodeJS</li>
+				<li><a href="https://www.visualstudio.com/">Visual Studio solution files</a></li>
+				<li><a href="https://msdn.microsoft.com/en-us/library/wea2sca5%28v=vs.90%29.aspx">MSBuild scripts</a></li>
+				<li><a href="http://microsoft.com/powershell">Powershell scripts</a></li>
+				<li><a href="https://nodejs.org/">NodeJS</a></li>
 			</ul>		
 
 			<h3>Browsers</h3>
 			<ul>
 				<li>Firefox latest version</li>
+				<li>Safari latest version</li>
 				<li>Chrome latest version</li>
 				<li>IE 10 and later</li>
 			</ul>
@@ -167,7 +169,7 @@ title: 'Easy Continuous Integration'
 
 			<h3>Deployment automation systems</h3>
 			<ul>
-				<li>Octopus deploy</li>
+				<li><a href="https://octopusdeploy.com/">Octopus deploy</a></li>
 			</ul>
 		</div>
 
