@@ -116,7 +116,7 @@ title: 'Easy Continuous Integration'
 		</div>
 
 		<div class="integration-group grid_2">
-			<h3>Version control systems</h3>
+			<h3 id="vcs">Version control systems</h3>
 			<ul>
 				<li><a href="http://git-scm.com/">Git</a></li>
 				<li><a href="http://mercurial.selenic.com/">Mercurial</a></li>
@@ -124,7 +124,7 @@ title: 'Easy Continuous Integration'
 				<li><a href="http://www.visualstudio.com/products/tfs-overview-vs">TFS</a></li>
 			</ul>
 
-			<h3>Testing frameworks</h3>
+			<h3 id="unit-tests">Testing frameworks</h3>
 			<ul>
 				<li><a href="https://msdn.microsoft.com/en-us/library/hh694602.aspx">MSTest</a></li>
 				<li><a href="http://www.nunit.org/">NUnit</a></li>
@@ -132,20 +132,20 @@ title: 'Easy Continuous Integration'
 				<li><a href="http://fixie.github.io/">Fixie</a></li>
 			</ul>
 
-			<h3>Package management</h3>
+			<h3 id="packages">Package management</h3>
 			<ul>
 				<li><a href="https://www.nuget.org/">NuGet</a></li>
 				<li><a href="https://www.npmjs.com/">NPM</a></li>
 			</ul>
 
-			<h3>Clouds</h3>
+			<h3 id="clouds">Clouds</h3>
 			<ul>
 				<li><a href="http://azure.microsoft.com/ru-ru/">Azure</a></li>
 			</ul>
 		</div>
 
 		<div class="integration-group grid_2">
-			<h3>Script runners</h3>
+			<h3 id="scripts">Script runners</h3>
 			<ul>
 				<li><a href="https://www.visualstudio.com/">Visual Studio solution files</a></li>
 				<li><a href="https://msdn.microsoft.com/en-us/library/wea2sca5%28v=vs.90%29.aspx">MSBuild scripts</a></li>
@@ -153,7 +153,7 @@ title: 'Easy Continuous Integration'
 				<li><a href="https://nodejs.org/">NodeJS</a></li>
 			</ul>		
 
-			<h3>Browsers</h3>
+			<h3 id="browsers">Browsers</h3>
 			<ul>
 				<li>Firefox latest version</li>
 				<li>Safari latest version</li>
@@ -161,13 +161,13 @@ title: 'Easy Continuous Integration'
 				<li>IE 10 and later</li>
 			</ul>
 
-			<h3>Operation systems</h3>
+			<h3 id="os">Operation systems</h3>
 			<ul>
 				<li>Windows 2003 and later</li>
 				<li>Windows 7 and later</li>
 			</ul>
 
-			<h3>Deployment automation systems</h3>
+			<h3 id="deploy">Deployment automation systems</h3>
 			<ul>
 				<li><a href="https://octopusdeploy.com/">Octopus deploy</a></li>
 			</ul>
