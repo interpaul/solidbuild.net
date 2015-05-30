@@ -14,7 +14,7 @@ title: 'Easy Continuous Integration'
 			</div>
 		</nav>
 		<div class="header-actions">
-			<a id="lnkLogin" href="http://ci.solidbuild.net/" class="button">Login</a>
+			<a id="lnkLogin" href="https://ci.solidbuild.net/" class="button">Login</a>
 		</div>
 	</header>
 	<div class="headline page-max-width">
