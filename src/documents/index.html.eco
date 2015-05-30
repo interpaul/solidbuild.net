@@ -130,6 +130,7 @@ title: 'Easy Continuous Integration'
 				<li><a href="http://www.nunit.org/">NUnit</a></li>
 				<li><a href="http://xunit.github.io/">XUnit</a></li>
 				<li><a href="http://fixie.github.io/">Fixie</a></li>
+				<li><a href="https://github.com/OpenCover/opencover">Code coverage with OpenCover</a></li>
 			</ul>
 
 			<h3 id="packages">Package management</h3>

@@ -32,7 +32,7 @@
 					<%- @partial('menu') %>
 				</nav>
 				<div class="header-actions">
-					<a href="http://ci.solidbuild.net/" class="button">Login</a>
+					<a href="https://ci.solidbuild.net/" class="button">Login</a>
 				</div>
 			</header>
 			<div class="section-invite-small" id="invite">
