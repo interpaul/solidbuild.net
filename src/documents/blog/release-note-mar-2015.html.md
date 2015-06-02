@@ -2,7 +2,7 @@
 layout: posts
 kind: blogpost
 title: Release note - Mar 2015
-blogExcerpt: "Updates and news"
+blogExcerpt: "Fixie support, new Azure Vms"
 menuItem: "blog"
 blogDate: 2015-04-01 22:25
 ---

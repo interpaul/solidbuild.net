@@ -2,7 +2,7 @@
 layout: posts
 kind: blogpost
 title: Release note - Nov 2014
-blogExcerpt: "Release note"
+blogExcerpt: "Checkout TFS project and performance improvements"
 menuItem: "blog"
 blogDate: 2014-11-30 21:20
 ---

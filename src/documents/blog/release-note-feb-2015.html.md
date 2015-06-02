@@ -2,7 +2,7 @@
 layout: posts
 kind: blogpost
 title: Release note - Feb 2015
-blogExcerpt: "Updates and news"
+blogExcerpt: "Build chains and bug fixes"
 menuItem: "blog"
 blogDate: 2015-03-01 13:24
 ---

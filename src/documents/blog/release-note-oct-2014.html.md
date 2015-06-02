@@ -2,7 +2,7 @@
 layout: posts
 kind: blogpost
 title: Release note - Oct 2014
-blogExcerpt: "Release note"
+blogExcerpt: "Performance improvements and environments page"
 menuItem: "blog"
 blogDate: 2014-10-15 21:20
 ---

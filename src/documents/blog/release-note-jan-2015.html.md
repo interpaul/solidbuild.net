@@ -2,7 +2,7 @@
 layout: posts
 kind: blogpost
 title: Release note - Jan 2015
-blogExcerpt: "Updates and news"
+blogExcerpt: "Octopus deploy"
 menuItem: "blog"
 blogDate: 2015-02-01 21:37
 ---
